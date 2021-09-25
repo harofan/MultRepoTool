@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import B
+import PodB
 
 class ViewController: UIViewController {
 

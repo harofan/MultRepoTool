@@ -1,6 +1,7 @@
 PODS:
   - PodA (0.1.0)
-  - PodB (0.1.0)
+  - PodB (0.1.0):
+    - PodA
 
 DEPENDENCIES:
   - PodA (from `../Source/PodA`)
@@ -14,7 +15,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   PodA: 0735150dcf05d8f689c90afc523a6701ae93a326
-  PodB: c7a01afb135397e6e8e2079cc1721113477d1c4d
+  PodB: c503cc857db4f3cda1c8b96d4c3d94b4a788dbf3
 
 PODFILE CHECKSUM: ca6cd4ad4558aa3ff474b8ad14f843a70b943870
 

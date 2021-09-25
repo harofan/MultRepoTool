@@ -5,7 +5,7 @@
 //  Created by harofan on 2021/9/23.
 //
 
-import A
+import PodA
 
 public class ClassB {
     public init() {
