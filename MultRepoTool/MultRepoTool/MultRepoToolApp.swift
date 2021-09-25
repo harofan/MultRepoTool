@@ -11,7 +11,8 @@ import SwiftUI
 struct MultRepoToolApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView(stepViewModel: StepViewModel())
+                .frame(minWidth: 2000, minHeight: 1000, alignment: .center)
         }
     }
 }
