@@ -6,8 +6,8 @@ target 'MultRepoDemo' do
   use_frameworks!
 
   # Pods for MultRepoDemo
-  pod 'PodA', :path => '../PodA'
-  pod 'PodB', :path => '../PodB'
+  pod 'PodA', :path => '../Source/PodA'
+  pod 'PodB', :path => '../Source/PodB'
 
   target 'MultRepoDemoTests' do
     inherit! :search_paths
