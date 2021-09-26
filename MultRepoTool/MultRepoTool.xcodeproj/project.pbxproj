@@ -19,7 +19,68 @@
 		574F6F352700F2940047233F /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F2D2700F2940047233F /* StepView.swift */; };
 		574F6F362700F2940047233F /* RepoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F2F2700F2940047233F /* RepoRow.swift */; };
 		574F6F372700F2940047233F /* RepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F302700F2940047233F /* RepoView.swift */; };
+		574F6F902700F51B0047233F /* GitTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F8F2700F51B0047233F /* GitTool.swift */; };
+		578C5E592700FB1E0096A306 /* SwiftGit2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578C5E4A2700FB170096A306 /* SwiftGit2.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		578C5E492700FB170096A306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 578C5E3D2700FB170096A306 /* SwiftGit2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEB31F231A0D6F7A00F525B9;
+			remoteInfo = "SwiftGit2-OSX";
+		};
+		578C5E4B2700FB170096A306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 578C5E3D2700FB170096A306 /* SwiftGit2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEB31F2E1A0D6F7A00F525B9;
+			remoteInfo = "SwiftGit2-OSXTests";
+		};
+		578C5E4D2700FB170096A306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 578C5E3D2700FB170096A306 /* SwiftGit2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 621E66B41C72958800A0F352;
+			remoteInfo = "SwiftGit2-iOS";
+		};
+		578C5E4F2700FB170096A306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 578C5E3D2700FB170096A306 /* SwiftGit2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 621E66CE1C72958D00A0F352;
+			remoteInfo = "SwiftGit2-iOSTests";
+		};
+		578C5E512700FB170096A306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 578C5E3D2700FB170096A306 /* SwiftGit2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEB31F8F1A0E563900F525B9;
+			remoteInfo = "libgit2-OSX";
+		};
+		578C5E532700FB170096A306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 578C5E3D2700FB170096A306 /* SwiftGit2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 621E66E11C729CE500A0F352;
+			remoteInfo = "libgit2-iOS";
+		};
+		578C5E552700FB170096A306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 578C5E3D2700FB170096A306 /* SwiftGit2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 621E66EC1C729EB800A0F352;
+			remoteInfo = "OpenSSL-iOS";
+		};
+		578C5E572700FB170096A306 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 578C5E3D2700FB170096A306 /* SwiftGit2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 621E66F21C729EBB00A0F352;
+			remoteInfo = "libssh2-iOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		574F6F0C2700F2340047233F /* MultRepoTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultRepoTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +99,8 @@
 		574F6F2D2700F2940047233F /* StepView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
 		574F6F2F2700F2940047233F /* RepoRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoRow.swift; sourceTree = "<group>"; };
 		574F6F302700F2940047233F /* RepoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoView.swift; sourceTree = "<group>"; };
+		574F6F8F2700F51B0047233F /* GitTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitTool.swift; sourceTree = "<group>"; };
+		578C5E3D2700FB170096A306 /* SwiftGit2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftGit2.xcodeproj; path = Carthage/Checkouts/SwiftGit2/SwiftGit2.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				578C5E592700FB1E0096A306 /* SwiftGit2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +121,7 @@
 				574F6F1F2700F2800047233F /* MultRepoTool.entitlements */,
 				574F6F0E2700F2340047233F /* MultRepoTool */,
 				574F6F0D2700F2340047233F /* Products */,
+				574F6F8C2700F4E70047233F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +136,7 @@
 		574F6F0E2700F2340047233F /* MultRepoTool */ = {
 			isa = PBXGroup;
 			children = (
+				578C5E3D2700FB170096A306 /* SwiftGit2.xcodeproj */,
 				574F6F242700F2930047233F /* WorkFlow */,
 				574F6F0F2700F2340047233F /* MultRepoToolApp.swift */,
 				574F6F202700F2880047233F /* MultRepoToolConfig.swift */,
@@ -94,6 +160,7 @@
 		574F6F242700F2930047233F /* WorkFlow */ = {
 			isa = PBXGroup;
 			children = (
+				574F6F8E2700F50E0047233F /* Git */,
 				574F6F252700F2930047233F /* Spec */,
 				574F6F282700F2930047233F /* StepUI */,
 				574F6F2E2700F2940047233F /* RepoUI */,
@@ -145,6 +212,36 @@
 			path = RepoUI;
 			sourceTree = "<group>";
 		};
+		574F6F8C2700F4E70047233F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		574F6F8E2700F50E0047233F /* Git */ = {
+			isa = PBXGroup;
+			children = (
+				574F6F8F2700F51B0047233F /* GitTool.swift */,
+			);
+			path = Git;
+			sourceTree = "<group>";
+		};
+		578C5E3E2700FB170096A306 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				578C5E4A2700FB170096A306 /* SwiftGit2.framework */,
+				578C5E4C2700FB170096A306 /* SwiftGit2-OSXTests.xctest */,
+				578C5E4E2700FB170096A306 /* SwiftGit2.framework */,
+				578C5E502700FB170096A306 /* SwiftGit2-iOSTests.xctest */,
+				578C5E522700FB170096A306 /* libgit2.a */,
+				578C5E542700FB170096A306 /* libgit2.a */,
+				578C5E562700FB170096A306 /* libssl.a */,
+				578C5E582700FB170096A306 /* libssh2.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,12 +287,77 @@
 			mainGroup = 574F6F032700F2340047233F;
 			productRefGroup = 574F6F0D2700F2340047233F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 578C5E3E2700FB170096A306 /* Products */;
+					ProjectRef = 578C5E3D2700FB170096A306 /* SwiftGit2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				574F6F0B2700F2340047233F /* MultRepoTool */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		578C5E4A2700FB170096A306 /* SwiftGit2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftGit2.framework;
+			remoteRef = 578C5E492700FB170096A306 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		578C5E4C2700FB170096A306 /* SwiftGit2-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftGit2-OSXTests.xctest";
+			remoteRef = 578C5E4B2700FB170096A306 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		578C5E4E2700FB170096A306 /* SwiftGit2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftGit2.framework;
+			remoteRef = 578C5E4D2700FB170096A306 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		578C5E502700FB170096A306 /* SwiftGit2-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftGit2-iOSTests.xctest";
+			remoteRef = 578C5E4F2700FB170096A306 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		578C5E522700FB170096A306 /* libgit2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgit2.a;
+			remoteRef = 578C5E512700FB170096A306 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		578C5E542700FB170096A306 /* libgit2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgit2.a;
+			remoteRef = 578C5E532700FB170096A306 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		578C5E562700FB170096A306 /* libssl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libssl.a;
+			remoteRef = 578C5E552700FB170096A306 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		578C5E582700FB170096A306 /* libssh2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libssh2.a;
+			remoteRef = 578C5E572700FB170096A306 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		574F6F0A2700F2340047233F /* Resources */ = {
@@ -221,6 +383,7 @@
 				574F6F372700F2940047233F /* RepoView.swift in Sources */,
 				574F6F312700F2940047233F /* SpecScanner.swift in Sources */,
 				574F6F232700F28D0047233F /* MainView.swift in Sources */,
+				574F6F902700F51B0047233F /* GitTool.swift in Sources */,
 				574F6F322700F2940047233F /* Spec.swift in Sources */,
 				574F6F342700F2940047233F /* StepRow.swift in Sources */,
 				574F6F212700F2880047233F /* MultRepoToolConfig.swift in Sources */,
@@ -357,6 +520,10 @@
 				DEVELOPMENT_TEAM = 56M98M5X7T;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MultRepoTool/ThirdLib",
+				);
 				INFOPLIST_FILE = MultRepoTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -381,6 +548,10 @@
 				DEVELOPMENT_TEAM = 56M98M5X7T;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MultRepoTool/ThirdLib",
+				);
 				INFOPLIST_FILE = MultRepoTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
