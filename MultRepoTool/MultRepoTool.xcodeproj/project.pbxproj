@@ -3,44 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5720A5E32700D8EB00C5DE07 /* MultRepoToolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720A5E22700D8EB00C5DE07 /* MultRepoToolApp.swift */; };
-		5720A5E72700D8EC00C5DE07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5720A5E62700D8EC00C5DE07 /* Assets.xcassets */; };
-		5720A5EA2700D8EC00C5DE07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5720A5E92700D8EC00C5DE07 /* Preview Assets.xcassets */; };
-		5720A5F22700D93300C5DE07 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720A5F12700D93300C5DE07 /* MainView.swift */; };
-		5720A6012700D94A00C5DE07 /* SpecScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720A5F62700D94A00C5DE07 /* SpecScanner.swift */; };
-		5720A6022700D94A00C5DE07 /* Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720A5F72700D94A00C5DE07 /* Spec.swift */; };
-		5720A6032700D94A00C5DE07 /* StepNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720A5FA2700D94A00C5DE07 /* StepNumberView.swift */; };
-		5720A6042700D94A00C5DE07 /* StepRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720A5FB2700D94A00C5DE07 /* StepRow.swift */; };
-		5720A6052700D94A00C5DE07 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720A5FD2700D94A00C5DE07 /* StepView.swift */; };
-		5720A6062700D94A00C5DE07 /* RepoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720A5FF2700D94A00C5DE07 /* RepoRow.swift */; };
-		5720A6072700D94A00C5DE07 /* RepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720A6002700D94A00C5DE07 /* RepoView.swift */; };
-		5720A60B2700D98200C5DE07 /* MultRepoToolConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720A60A2700D98200C5DE07 /* MultRepoToolConfig.swift */; };
+		574F6F102700F2340047233F /* MultRepoToolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F0F2700F2340047233F /* MultRepoToolApp.swift */; };
+		574F6F142700F2350047233F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574F6F132700F2350047233F /* Assets.xcassets */; };
+		574F6F172700F2350047233F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574F6F162700F2350047233F /* Preview Assets.xcassets */; };
+		574F6F212700F2880047233F /* MultRepoToolConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F202700F2880047233F /* MultRepoToolConfig.swift */; };
+		574F6F232700F28D0047233F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F222700F28D0047233F /* MainView.swift */; };
+		574F6F312700F2940047233F /* SpecScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F262700F2930047233F /* SpecScanner.swift */; };
+		574F6F322700F2940047233F /* Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F272700F2930047233F /* Spec.swift */; };
+		574F6F332700F2940047233F /* StepNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F2A2700F2930047233F /* StepNumberView.swift */; };
+		574F6F342700F2940047233F /* StepRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F2B2700F2930047233F /* StepRow.swift */; };
+		574F6F352700F2940047233F /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F2D2700F2940047233F /* StepView.swift */; };
+		574F6F362700F2940047233F /* RepoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F2F2700F2940047233F /* RepoRow.swift */; };
+		574F6F372700F2940047233F /* RepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F302700F2940047233F /* RepoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5720A5DF2700D8EB00C5DE07 /* MultRepoTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultRepoTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5720A5E22700D8EB00C5DE07 /* MultRepoToolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultRepoToolApp.swift; sourceTree = "<group>"; };
-		5720A5E62700D8EC00C5DE07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5720A5E92700D8EC00C5DE07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5720A5EB2700D8EC00C5DE07 /* MultRepoTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MultRepoTool.entitlements; sourceTree = "<group>"; };
-		5720A5F12700D93300C5DE07 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		5720A5F32700D93B00C5DE07 /* MultRepoTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MultRepoTool.entitlements; path = MultRepoTool/MultRepoTool.entitlements; sourceTree = "<group>"; };
-		5720A5F62700D94A00C5DE07 /* SpecScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecScanner.swift; sourceTree = "<group>"; };
-		5720A5F72700D94A00C5DE07 /* Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spec.swift; sourceTree = "<group>"; };
-		5720A5FA2700D94A00C5DE07 /* StepNumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepNumberView.swift; sourceTree = "<group>"; };
-		5720A5FB2700D94A00C5DE07 /* StepRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepRow.swift; sourceTree = "<group>"; };
-		5720A5FD2700D94A00C5DE07 /* StepView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
-		5720A5FF2700D94A00C5DE07 /* RepoRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoRow.swift; sourceTree = "<group>"; };
-		5720A6002700D94A00C5DE07 /* RepoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoView.swift; sourceTree = "<group>"; };
-		5720A60A2700D98200C5DE07 /* MultRepoToolConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultRepoToolConfig.swift; sourceTree = "<group>"; };
+		574F6F0C2700F2340047233F /* MultRepoTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultRepoTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		574F6F0F2700F2340047233F /* MultRepoToolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultRepoToolApp.swift; sourceTree = "<group>"; };
+		574F6F132700F2350047233F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		574F6F162700F2350047233F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		574F6F182700F2350047233F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		574F6F192700F2350047233F /* MultRepoTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MultRepoTool.entitlements; sourceTree = "<group>"; };
+		574F6F1F2700F2800047233F /* MultRepoTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MultRepoTool.entitlements; path = MultRepoTool/MultRepoTool.entitlements; sourceTree = "<group>"; };
+		574F6F202700F2880047233F /* MultRepoToolConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultRepoToolConfig.swift; sourceTree = "<group>"; };
+		574F6F222700F28D0047233F /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		574F6F262700F2930047233F /* SpecScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecScanner.swift; sourceTree = "<group>"; };
+		574F6F272700F2930047233F /* Spec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spec.swift; sourceTree = "<group>"; };
+		574F6F2A2700F2930047233F /* StepNumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepNumberView.swift; sourceTree = "<group>"; };
+		574F6F2B2700F2930047233F /* StepRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepRow.swift; sourceTree = "<group>"; };
+		574F6F2D2700F2940047233F /* StepView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
+		574F6F2F2700F2940047233F /* RepoRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoRow.swift; sourceTree = "<group>"; };
+		574F6F302700F2940047233F /* RepoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5720A5DC2700D8EB00C5DE07 /* Frameworks */ = {
+		574F6F092700F2340047233F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,95 +51,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5720A5D62700D8EB00C5DE07 = {
+		574F6F032700F2340047233F = {
 			isa = PBXGroup;
 			children = (
-				5720A5F32700D93B00C5DE07 /* MultRepoTool.entitlements */,
-				5720A5E12700D8EB00C5DE07 /* MultRepoTool */,
-				5720A5E02700D8EB00C5DE07 /* Products */,
+				574F6F1F2700F2800047233F /* MultRepoTool.entitlements */,
+				574F6F0E2700F2340047233F /* MultRepoTool */,
+				574F6F0D2700F2340047233F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5720A5E02700D8EB00C5DE07 /* Products */ = {
+		574F6F0D2700F2340047233F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5720A5DF2700D8EB00C5DE07 /* MultRepoTool.app */,
+				574F6F0C2700F2340047233F /* MultRepoTool.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5720A5E12700D8EB00C5DE07 /* MultRepoTool */ = {
+		574F6F0E2700F2340047233F /* MultRepoTool */ = {
 			isa = PBXGroup;
 			children = (
-				5720A5F42700D94A00C5DE07 /* WorkFlow */,
-				5720A5F12700D93300C5DE07 /* MainView.swift */,
-				5720A60A2700D98200C5DE07 /* MultRepoToolConfig.swift */,
-				5720A5E22700D8EB00C5DE07 /* MultRepoToolApp.swift */,
-				5720A5E62700D8EC00C5DE07 /* Assets.xcassets */,
-				5720A5EB2700D8EC00C5DE07 /* MultRepoTool.entitlements */,
-				5720A5E82700D8EC00C5DE07 /* Preview Content */,
+				574F6F242700F2930047233F /* WorkFlow */,
+				574F6F0F2700F2340047233F /* MultRepoToolApp.swift */,
+				574F6F202700F2880047233F /* MultRepoToolConfig.swift */,
+				574F6F222700F28D0047233F /* MainView.swift */,
+				574F6F132700F2350047233F /* Assets.xcassets */,
+				574F6F182700F2350047233F /* Info.plist */,
+				574F6F192700F2350047233F /* MultRepoTool.entitlements */,
+				574F6F152700F2350047233F /* Preview Content */,
 			);
 			path = MultRepoTool;
 			sourceTree = "<group>";
 		};
-		5720A5E82700D8EC00C5DE07 /* Preview Content */ = {
+		574F6F152700F2350047233F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				5720A5E92700D8EC00C5DE07 /* Preview Assets.xcassets */,
+				574F6F162700F2350047233F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5720A5F42700D94A00C5DE07 /* WorkFlow */ = {
+		574F6F242700F2930047233F /* WorkFlow */ = {
 			isa = PBXGroup;
 			children = (
-				5720A5F52700D94A00C5DE07 /* Spec */,
-				5720A5F82700D94A00C5DE07 /* StepUI */,
-				5720A5FE2700D94A00C5DE07 /* RepoUI */,
+				574F6F252700F2930047233F /* Spec */,
+				574F6F282700F2930047233F /* StepUI */,
+				574F6F2E2700F2940047233F /* RepoUI */,
 			);
 			path = WorkFlow;
 			sourceTree = "<group>";
 		};
-		5720A5F52700D94A00C5DE07 /* Spec */ = {
+		574F6F252700F2930047233F /* Spec */ = {
 			isa = PBXGroup;
 			children = (
-				5720A5F62700D94A00C5DE07 /* SpecScanner.swift */,
-				5720A5F72700D94A00C5DE07 /* Spec.swift */,
+				574F6F262700F2930047233F /* SpecScanner.swift */,
+				574F6F272700F2930047233F /* Spec.swift */,
 			);
 			path = Spec;
 			sourceTree = "<group>";
 		};
-		5720A5F82700D94A00C5DE07 /* StepUI */ = {
+		574F6F282700F2930047233F /* StepUI */ = {
 			isa = PBXGroup;
 			children = (
-				5720A5F92700D94A00C5DE07 /* StepRow */,
-				5720A5FC2700D94A00C5DE07 /* StepView */,
+				574F6F292700F2930047233F /* StepRow */,
+				574F6F2C2700F2930047233F /* StepView */,
 			);
 			path = StepUI;
 			sourceTree = "<group>";
 		};
-		5720A5F92700D94A00C5DE07 /* StepRow */ = {
+		574F6F292700F2930047233F /* StepRow */ = {
 			isa = PBXGroup;
 			children = (
-				5720A5FA2700D94A00C5DE07 /* StepNumberView.swift */,
-				5720A5FB2700D94A00C5DE07 /* StepRow.swift */,
+				574F6F2A2700F2930047233F /* StepNumberView.swift */,
+				574F6F2B2700F2930047233F /* StepRow.swift */,
 			);
 			path = StepRow;
 			sourceTree = "<group>";
 		};
-		5720A5FC2700D94A00C5DE07 /* StepView */ = {
+		574F6F2C2700F2930047233F /* StepView */ = {
 			isa = PBXGroup;
 			children = (
-				5720A5FD2700D94A00C5DE07 /* StepView.swift */,
+				574F6F2D2700F2940047233F /* StepView.swift */,
 			);
 			path = StepView;
 			sourceTree = "<group>";
 		};
-		5720A5FE2700D94A00C5DE07 /* RepoUI */ = {
+		574F6F2E2700F2940047233F /* RepoUI */ = {
 			isa = PBXGroup;
 			children = (
-				5720A5FF2700D94A00C5DE07 /* RepoRow.swift */,
-				5720A6002700D94A00C5DE07 /* RepoView.swift */,
+				574F6F2F2700F2940047233F /* RepoRow.swift */,
+				574F6F302700F2940047233F /* RepoView.swift */,
 			);
 			path = RepoUI;
 			sourceTree = "<group>";
@@ -146,13 +148,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5720A5DE2700D8EB00C5DE07 /* MultRepoTool */ = {
+		574F6F0B2700F2340047233F /* MultRepoTool */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5720A5EE2700D8EC00C5DE07 /* Build configuration list for PBXNativeTarget "MultRepoTool" */;
+			buildConfigurationList = 574F6F1C2700F2350047233F /* Build configuration list for PBXNativeTarget "MultRepoTool" */;
 			buildPhases = (
-				5720A5DB2700D8EB00C5DE07 /* Sources */,
-				5720A5DC2700D8EB00C5DE07 /* Frameworks */,
-				5720A5DD2700D8EB00C5DE07 /* Resources */,
+				574F6F082700F2340047233F /* Sources */,
+				574F6F092700F2340047233F /* Frameworks */,
+				574F6F0A2700F2340047233F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -160,82 +162,81 @@
 			);
 			name = MultRepoTool;
 			productName = MultRepoTool;
-			productReference = 5720A5DF2700D8EB00C5DE07 /* MultRepoTool.app */;
+			productReference = 574F6F0C2700F2340047233F /* MultRepoTool.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5720A5D72700D8EB00C5DE07 /* Project object */ = {
+		574F6F042700F2340047233F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					5720A5DE2700D8EB00C5DE07 = {
-						CreatedOnToolsVersion = 13.0;
+					574F6F0B2700F2340047233F = {
+						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
-			buildConfigurationList = 5720A5DA2700D8EB00C5DE07 /* Build configuration list for PBXProject "MultRepoTool" */;
-			compatibilityVersion = "Xcode 13.0";
+			buildConfigurationList = 574F6F072700F2340047233F /* Build configuration list for PBXProject "MultRepoTool" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 5720A5D62700D8EB00C5DE07;
-			productRefGroup = 5720A5E02700D8EB00C5DE07 /* Products */;
+			mainGroup = 574F6F032700F2340047233F;
+			productRefGroup = 574F6F0D2700F2340047233F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5720A5DE2700D8EB00C5DE07 /* MultRepoTool */,
+				574F6F0B2700F2340047233F /* MultRepoTool */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5720A5DD2700D8EB00C5DE07 /* Resources */ = {
+		574F6F0A2700F2340047233F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5720A5EA2700D8EC00C5DE07 /* Preview Assets.xcassets in Resources */,
-				5720A5E72700D8EC00C5DE07 /* Assets.xcassets in Resources */,
+				574F6F172700F2350047233F /* Preview Assets.xcassets in Resources */,
+				574F6F142700F2350047233F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5720A5DB2700D8EB00C5DE07 /* Sources */ = {
+		574F6F082700F2340047233F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5720A6022700D94A00C5DE07 /* Spec.swift in Sources */,
-				5720A60B2700D98200C5DE07 /* MultRepoToolConfig.swift in Sources */,
-				5720A6032700D94A00C5DE07 /* StepNumberView.swift in Sources */,
-				5720A6042700D94A00C5DE07 /* StepRow.swift in Sources */,
-				5720A5E32700D8EB00C5DE07 /* MultRepoToolApp.swift in Sources */,
-				5720A5F22700D93300C5DE07 /* MainView.swift in Sources */,
-				5720A6052700D94A00C5DE07 /* StepView.swift in Sources */,
-				5720A6062700D94A00C5DE07 /* RepoRow.swift in Sources */,
-				5720A6072700D94A00C5DE07 /* RepoView.swift in Sources */,
-				5720A6012700D94A00C5DE07 /* SpecScanner.swift in Sources */,
+				574F6F352700F2940047233F /* StepView.swift in Sources */,
+				574F6F362700F2940047233F /* RepoRow.swift in Sources */,
+				574F6F102700F2340047233F /* MultRepoToolApp.swift in Sources */,
+				574F6F332700F2940047233F /* StepNumberView.swift in Sources */,
+				574F6F372700F2940047233F /* RepoView.swift in Sources */,
+				574F6F312700F2940047233F /* SpecScanner.swift in Sources */,
+				574F6F232700F28D0047233F /* MainView.swift in Sources */,
+				574F6F322700F2940047233F /* Spec.swift in Sources */,
+				574F6F342700F2940047233F /* StepRow.swift in Sources */,
+				574F6F212700F2880047233F /* MultRepoToolConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		5720A5EC2700D8EC00C5DE07 /* Debug */ = {
+		574F6F1A2700F2350047233F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -290,13 +291,13 @@
 			};
 			name = Debug;
 		};
-		5720A5ED2700D8EC00C5DE07 /* Release */ = {
+		574F6F1B2700F2350047233F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -344,7 +345,7 @@
 			};
 			name = Release;
 		};
-		5720A5EF2700D8EC00C5DE07 /* Debug */ = {
+		574F6F1D2700F2350047233F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -352,27 +353,23 @@
 				CODE_SIGN_ENTITLEMENTS = MultRepoTool/MultRepoTool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MultRepoTool/Preview Content\"";
 				DEVELOPMENT_TEAM = 56M98M5X7T;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_FILE = MultRepoTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.harofan.MultRepoTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		5720A5F02700D8EC00C5DE07 /* Release */ = {
+		574F6F1E2700F2350047233F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -380,22 +377,18 @@
 				CODE_SIGN_ENTITLEMENTS = MultRepoTool/MultRepoTool.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MultRepoTool/Preview Content\"";
 				DEVELOPMENT_TEAM = 56M98M5X7T;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_FILE = MultRepoTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.harofan.MultRepoTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -403,25 +396,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5720A5DA2700D8EB00C5DE07 /* Build configuration list for PBXProject "MultRepoTool" */ = {
+		574F6F072700F2340047233F /* Build configuration list for PBXProject "MultRepoTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5720A5EC2700D8EC00C5DE07 /* Debug */,
-				5720A5ED2700D8EC00C5DE07 /* Release */,
+				574F6F1A2700F2350047233F /* Debug */,
+				574F6F1B2700F2350047233F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5720A5EE2700D8EC00C5DE07 /* Build configuration list for PBXNativeTarget "MultRepoTool" */ = {
+		574F6F1C2700F2350047233F /* Build configuration list for PBXNativeTarget "MultRepoTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5720A5EF2700D8EC00C5DE07 /* Debug */,
-				5720A5F02700D8EC00C5DE07 /* Release */,
+				574F6F1D2700F2350047233F /* Debug */,
+				574F6F1E2700F2350047233F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5720A5D72700D8EB00C5DE07 /* Project object */;
+	rootObject = 574F6F042700F2340047233F /* Project object */;
 }
