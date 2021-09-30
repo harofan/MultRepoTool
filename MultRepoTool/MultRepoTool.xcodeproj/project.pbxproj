@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		574F6F362700F2940047233F /* RepoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F2F2700F2940047233F /* RepoRow.swift */; };
 		574F6F372700F2940047233F /* RepoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F302700F2940047233F /* RepoView.swift */; };
 		574F6F902700F51B0047233F /* GitTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574F6F8F2700F51B0047233F /* GitTool.swift */; };
+		577F21312705EE9B000A98E8 /* SwiftShell in Frameworks */ = {isa = PBXBuildFile; productRef = 577F21302705EE9B000A98E8 /* SwiftShell */; };
 		578C5E592700FB1E0096A306 /* SwiftGit2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578C5E4A2700FB170096A306 /* SwiftGit2.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				578C5E592700FB1E0096A306 /* SwiftGit2.framework in Frameworks */,
+				577F21312705EE9B000A98E8 /* SwiftShell in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +260,9 @@
 			dependencies = (
 			);
 			name = MultRepoTool;
+			packageProductDependencies = (
+				577F21302705EE9B000A98E8 /* SwiftShell */,
+			);
 			productName = MultRepoTool;
 			productReference = 574F6F0C2700F2340047233F /* MultRepoTool.app */;
 			productType = "com.apple.product-type.application";
@@ -285,6 +290,9 @@
 				Base,
 			);
 			mainGroup = 574F6F032700F2340047233F;
+			packageReferences = (
+				577F212F2705EE9B000A98E8 /* XCRemoteSwiftPackageReference "SwiftShell" */,
+			);
 			productRefGroup = 574F6F0D2700F2340047233F /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -586,6 +594,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		577F212F2705EE9B000A98E8 /* XCRemoteSwiftPackageReference "SwiftShell" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kareman/SwiftShell";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		577F21302705EE9B000A98E8 /* SwiftShell */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 577F212F2705EE9B000A98E8 /* XCRemoteSwiftPackageReference "SwiftShell" */;
+			productName = SwiftShell;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 574F6F042700F2340047233F /* Project object */;
 }
