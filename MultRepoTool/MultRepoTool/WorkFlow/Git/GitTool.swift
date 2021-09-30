@@ -6,7 +6,7 @@
 //
 //
 
-import ObjectiveGit
+//import ObjectiveGit
 
 final class GitTool {
 //    lazy var repo: XTRepository = try! XTReposito
@@ -37,8 +37,8 @@ final class GitTool {
     /// 拉取远端,
     /// - Parameter branch: 分支名, 不传的话为当前分支
     func pull(_ branch: String? = nil) {
-        let repo = try? GTRepository(url: URL(string: sourceDirectory)!)
-        print(repo)
+//        let repo = try? GTRepository(url: URL(string: sourceDirectory)!)
+//        print(repo)
 //        let configuration = try! repo.configuration()
 //        guard let remote = configuration.remotes?.first else { fatalError("远端获取失败") }
 //        var success: ObjCBool = false
