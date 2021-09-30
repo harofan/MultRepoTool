@@ -7,6 +7,8 @@
 
 /// 先使用大仓仓库群的绝对路径
 public let sourceDirectory = "/Users/harofan/TencentProject/MultRepoTool/Source/"
+/// 二进制命令path
+public let binPath = "/usr/bin"
 
 /// 提交签名配置 TODO: 待优化从本地直接获取
 public let userName = "harofan"

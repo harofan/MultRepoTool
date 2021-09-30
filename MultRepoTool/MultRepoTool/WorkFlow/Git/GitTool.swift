@@ -57,7 +57,7 @@ final class GitTool {
     
     private func shell(_ args: [String]) -> String {
         let task = Process()
-        task.launchPath = "/usr/bin/env"
+        task.launchPath = binPath
         task.arguments = args
         let pipe = Pipe()
         task.standardOutput = pipe
