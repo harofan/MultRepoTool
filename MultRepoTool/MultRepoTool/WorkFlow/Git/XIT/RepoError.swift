@@ -81,7 +81,7 @@ public enum RepoError: Swift.Error
         self = .notFound
       case GIT_EUNMERGED:
         self = .mergeInProgress
-      case GIT_EUNCOMMITTED, GIT_EINDEXDIRTY:
+      case GIT_EUNCOMMITTED:
         self = .workspaceDirty
       case GIT_EINVALIDSPEC:
         self = .invalidNameGiven

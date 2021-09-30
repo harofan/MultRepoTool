@@ -5,14 +5,18 @@
 //#import <git2/git2.h>
 #import <Foundation/Foundation.h>
 #include <pthread.h>
-#import "checkout.h"
-#import "diff.h"
-#import "status.h"
-#import "types.h"
 #import "git2.h"
-#import "tree.h"
-#import "refs.h"
-#import "config1.h"
+//#import <ObjectiveGit/git2.h>
+//#import <ObjectiveGit/git2/types.h>
+//@import ObjectiveGit;
+//#import "checkout.h"
+//#import "diff.h"
+//#import "status.h"
+//#import "types.h"
+//#import "git2.h"
+//#import "tree.h"
+//#import "refs.h"
+//#import "config1.h"
 
 //#import "git2.h"
 
@@ -88,22 +92,22 @@ typedef NS_OPTIONS(unsigned int, DiffOptionFlags)
 
 typedef NS_ENUM(int, ReferenceType)
 {
-  ReferenceTypeInvalid = GIT_REFERENCE_INVALID,
-  ReferenceTypeDirect = GIT_REFERENCE_DIRECT,
-  ReferenceTypeSymbolic = GIT_REFERENCE_SYMBOLIC,
-  ReferenceTypeListAll = GIT_REFERENCE_ALL,
+  ReferenceTypeInvalid = GIT_REF_INVALID,
+  ReferenceTypeDirect = GIT_REF_OID,
+  ReferenceTypeSymbolic = GIT_REF_SYMBOLIC,
+  ReferenceTypeListAll = GIT_REF_LISTALL,
 };
 
 typedef NS_ENUM(int, GitObjectType)
 {
-  GitObjectTypeAny = GIT_OBJECT_ANY,
-  GitObjectTypeInvalid = GIT_OBJECT_INVALID,
-  GitObjectTypeCommit = GIT_OBJECT_COMMIT,
-  GitObjectTypeTree = GIT_OBJECT_TREE,
-  GitObjectTypeBlob = GIT_OBJECT_BLOB,
-  GitObjectTypeTag = GIT_OBJECT_TAG,
-  GitObjectTypeOffsetDelta = GIT_OBJECT_OFS_DELTA,
-  GitObjectTypeRefDelta = GIT_OBJECT_REF_DELTA,
+  GitObjectTypeAny = GIT_OBJ_ANY,
+  GitObjectTypeInvalid = GIT_REF_INVALID,
+  GitObjectTypeCommit = GIT_OBJ_COMMIT,
+  GitObjectTypeTree = GIT_OBJ_TREE,
+  GitObjectTypeBlob = GIT_OBJ_BLOB,
+  GitObjectTypeTag = GIT_OBJ_TAG,
+  GitObjectTypeOffsetDelta = GIT_OBJ_OFS_DELTA,
+  GitObjectTypeRefDelta = GIT_OBJ_REF_DELTA,
 };
 
 typedef NS_ENUM(int, StatusShow)

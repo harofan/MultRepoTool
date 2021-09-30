@@ -1,7 +1,5 @@
 import Foundation
 
-
-
 protocol OptionBits
 {
   func test(_ flag: Self) -> Bool
@@ -45,13 +43,13 @@ extension git_index_entry
   {
     get
     {
-      (flags & UInt16(GIT_INDEX_ENTRY_STAGEMASK)) >> GIT_INDEX_ENTRY_STAGESHIFT
+      (flags & UInt16(0x3000)) >> 0x3000
     }
     set
     {
-      let cleared = flags & ~UInt16(GIT_INDEX_ENTRY_STAGEMASK)
+      let cleared = flags & ~UInt16(0x3000)
       
-      flags = cleared | ((newValue & 0x03) << UInt16(GIT_INDEX_ENTRY_STAGESHIFT))
+      flags = cleared | ((newValue & 0x03) << UInt16(0x3000))
     }
   }
 }

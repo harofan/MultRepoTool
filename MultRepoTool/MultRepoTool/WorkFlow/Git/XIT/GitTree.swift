@@ -1,5 +1,4 @@
 import Foundation
-//
 
 public protocol Tree: OIDObject
 {
@@ -83,7 +82,7 @@ class GitTree: Tree
   {
     var oid = oid // needs to be mutable
     guard let tree = try? OpaquePointer.from({
-      git_object_lookup(&$0, repo, &oid, GIT_OBJECT_TREE)
+      git_object_lookup(&$0, repo, &oid, GIT_OBJ_TREE)
     })
     else { return nil }
     

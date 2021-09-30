@@ -41,7 +41,7 @@ public class GitTag: Tag
     self.name = name.droppingPrefix(GitTag.tagPrefix)
     
     self.tag = try? OpaquePointer.from({
-        git_reference_peel(&$0, ref, GIT_OBJECT_TAG) })
+        git_reference_peel(&$0, ref, GIT_OBJ_TAG) })
     self.repository = repository
   }
   
@@ -63,7 +63,7 @@ public class GitTag: Tag
     }
     
     guard let target = try? OpaquePointer.from({
-      git_reference_peel(&$0, ref, GIT_OBJECT_COMMIT)
+      git_reference_peel(&$0, ref, GIT_OBJ_COMMIT)
     })
     else { return nil }
     

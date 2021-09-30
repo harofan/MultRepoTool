@@ -1,6 +1,5 @@
 import Foundation
 
-
 public protocol RefSpec
 {
   var source: String { get }

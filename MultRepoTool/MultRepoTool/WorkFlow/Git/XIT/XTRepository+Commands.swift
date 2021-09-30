@@ -72,7 +72,7 @@ extension XTRepository: Workspace
     let target = try OpaquePointer.from {
       (target) in
       oid.withUnsafeOID {
-        git_object_lookup(&target, gitRepo, $0, GIT_OBJECT_ANY)
+        git_object_lookup(&target, gitRepo, $0, GIT_OBJ_ANY)
       }
     }
     
@@ -88,7 +88,7 @@ extension XTRepository: Workspace
       (object) in
       oid.withUnsafeOID {
         git_object_lookup_prefix(&object, gitRepo, $0,
-                                 Int(GIT_OID_RAWSZ), GIT_OBJECT_ANY)
+                                 Int(GIT_OID_RAWSZ), GIT_OBJ_ANY)
       }
     }
     

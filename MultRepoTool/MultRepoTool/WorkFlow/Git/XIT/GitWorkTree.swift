@@ -1,6 +1,5 @@
 import Foundation
 
-
 public enum WorkTreeLockStatus
 {
   case unlocked
@@ -39,11 +38,15 @@ class GitWorkTree: WorkTree
 {
   let workTree: OpaquePointer
   
-  var name: String
-  { String(cString: git_worktree_name(workTree)) }
+  var name: String {
+    return ""
+//    String(cString: git_worktree_name(workTree))
+  }
   
-  var path: String
-  { String(cString: git_worktree_path(workTree)) }
+  var path: String {
+    return ""
+//    String(cString: git_worktree_path(workTree))
+  }
   
   var lockStatus: WorkTreeLockStatus
   {

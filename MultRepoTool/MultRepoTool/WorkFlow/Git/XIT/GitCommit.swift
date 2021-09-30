@@ -180,9 +180,9 @@ public class GitCommit: Commit
             git_reference_lookup(&$0, repository, ref)
           }),
           let gitObject = try? OpaquePointer.from({
-            git_reference_peel(&$0, gitRef, GIT_OBJECT_COMMIT)
+            git_reference_peel(&$0, gitRef, GIT_OBJ_COMMIT)
           }),
-          git_object_type(gitObject) == GIT_OBJECT_COMMIT
+          git_object_type(gitObject) == GIT_OBJ_COMMIT
     else { return nil }
     
     self.init(gitCommit: gitObject)
