@@ -9,12 +9,15 @@
 import ObjectiveGit
 
 final class GitTool {
-    lazy var repo: GTRepository = try! GTRepository(url: URL(string: sourceDirectory)!)
-    
+//    lazy var repo: XTRepository = try! XTReposito
+//    guard let headOID = repository.headSHA.flatMap({ repository.oid(forSHA: $0) })
     /// 打tag
     /// - Parameter version: 版本号
-    func tag(_ version: String) {
-//        repo.createLightweightTagNamed(<#T##tagName: String##String#>, target: <#T##GTObject#>)
+    func tag(_ tagName: String) {
+//        let repo = Repository()
+//        crea
+//        repo.createTagNamed(<#T##tagName: String##String#>, target: <#T##GTObject#>, tagger: <#T##GTSignature#>, message: <#T##String#>)
+//        repo.createLightweightTagNamed(tagName, target: GTObject(obj: <#T##OpaquePointer#>, in: <#T##GTRepository#>)
 //        _ = repo.tag(named: version)
     }
     
@@ -34,12 +37,13 @@ final class GitTool {
     /// 拉取远端,
     /// - Parameter branch: 分支名, 不传的话为当前分支
     func pull(_ branch: String? = nil) {
-        // TODO: 暂时仅支持rebase-pull的方式
-        // TODO: SwiftGit2暂时不支持pull && push, 可以考虑日后业务流程完善, 踩过坑后给他提个pr
-//        let result = run(binPath, "git", "pull")
-//        print(result.stdout)
-        let branch = GTBranch(reference: GTReference()
-        repo.pull(<#T##branch: GTBranch##GTBranch#>, from: <#T##GTRemote#>, withOptions: <#T##[AnyHashable : Any]?#>, progress: <#T##GTRemoteFetchTransferProgressBlock?##GTRemoteFetchTransferProgressBlock?##(UnsafePointer<git_transfer_progress>, UnsafeMutablePointer<ObjCBool>) -> Void#>)
+        let repo = try? GTRepository(url: URL(string: sourceDirectory)!)
+        print(repo)
+//        let configuration = try! repo.configuration()
+//        guard let remote = configuration.remotes?.first else { fatalError("远端获取失败") }
+//        var success: ObjCBool = false
+//        let branch = try! repo.lookUpBranch(withName: "branch", type: .local, success: &success)
+//        try! repo.pull(branch, from: remote, withOptions: nil, progress: nil)
     }
     
     /// 推送远端
@@ -47,6 +51,10 @@ final class GitTool {
     func push(_ branch: String? = nil) {
 //        let result = run(binPath, "git", "push")
 //        print(result.stdout)
+    }
+    
+    func diff() {
+        
     }
     
     /// 计算OId
@@ -58,17 +66,14 @@ final class GitTool {
 //    func caculateSignature() -> Signature {
 ////        Signature(name: userName, email: email)
 //    }
-    
-//    private func shell(_ args: [String]) -> String {
-//        let task = Process()
-//        task.launchPath = binPath
-//        task.arguments = args
-//        let pipe = Pipe()
-//        task.standardOutput = pipe
-//        task.launch()
-//        task.waitUntilExit()
-//        let data = pipe.fileHandleForReading.readDataToEndOfFile()
-//        let output: String = NSString(data: data, encoding: String.Encoding.utf8.rawValue)! as String
-//        return output
-//    }
 }
+
+
+//BranchBlock localBranchWithName = ^ GTBranch * (NSString *branchName, GTRepository *repo) {
+//    BOOL success = NO;
+//    GTBranch *branch = [repo lookUpBranchWithName:branchName type:GTBranchTypeLocal success:&success error:NULL];
+//    expect(branch).notTo(beNil());
+//    expect(branch.shortName).to(equal(branchName));
+//
+//    return branch;
+//};
