@@ -7,6 +7,7 @@
 //
 
 //import ObjectiveGit
+import Foundation
 
 final class GitTool {
 //    lazy var repo: XTRepository = try! XTReposito
@@ -37,6 +38,7 @@ final class GitTool {
     /// 拉取远端,
     /// - Parameter branch: 分支名, 不传的话为当前分支
     func pull(_ branch: String? = nil) {
+        shell("git pull")
 //        let repo = try? GTRepository(url: URL(string: sourceDirectory)!)
 //        print(repo)
 //        let configuration = try! repo.configuration()
@@ -66,6 +68,43 @@ final class GitTool {
 //    func caculateSignature() -> Signature {
 ////        Signature(name: userName, email: email)
 //    }
+    
+    func shell(at: String, _ args: String) {
+        let task = Process()
+        task.launchPath = at
+        task.arguments = ["-c", args]
+
+        let pipeStandard = Pipe()
+        task.standardOutput = pipeStandard
+        task.launch()
+
+        let dataStandard = pipeStandard.fileHandleForReading.readDataToEndOfFile()
+        let outputStandard = String(data: dataStandard, encoding: String.Encoding.utf8)!
+        if outputStandard.count > 0  {
+            let lastIndexStandard = outputStandard.index(before: outputStandard.endIndex)
+            print(String(outputStandard[outputStandard.startIndex ..< lastIndexStandard]))
+        }
+        task.waitUntilExit()
+    }
+    
+    func shell(_ args: String...) -> Int32 {
+        let task = Process()
+        task.launchPath = "/usr/bin"
+        task.arguments = args
+        let pipeStandard = Pipe()
+        task.standardOutput = pipeStandard
+        task.launch()
+        
+        let dataStandard = pipeStandard.fileHandleForReading.readDataToEndOfFile()
+        let outputStandard = String(data: dataStandard, encoding: String.Encoding.utf8)!
+        if outputStandard.count > 0  {
+            let lastIndexStandard = outputStandard.index(before: outputStandard.endIndex)
+            print(String(outputStandard[outputStandard.startIndex ..< lastIndexStandard]))
+        }
+        
+        task.waitUntilExit()
+        return task.terminationStatus
+    }
 }
 
 
