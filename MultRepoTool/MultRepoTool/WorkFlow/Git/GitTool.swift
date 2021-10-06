@@ -53,7 +53,7 @@ final class GitTool {
     /// - Parameter message: 提交信息
     func commit(_ message: String) {
         do {
-            try shellOut(to: .gitCommit(message: message))
+            try shellOut(to: .gitCommit(message: message), at: sourceDirectory)
         } catch {
             let error = error as! ShellOutError
             print(error.message)
@@ -66,7 +66,7 @@ final class GitTool {
     /// - Parameter branch: 分支名
     func checkout(_ branch: String) {
         do {
-            try shellOut(to: .gitCheckout(branch: branch))
+            try shellOut(to: .gitCheckout(branch: branch), at: sourceDirectory)
         } catch {
             let error = error as! ShellOutError
             print(error.message)
@@ -79,7 +79,7 @@ final class GitTool {
     /// - Parameter branch: 分支名, 不传的话为当前分支
     func pull() {
         do {
-            try shellOut(to: .gitPull())
+            try shellOut(to: .gitPull(), at: sourceDirectory)
         } catch {
             let error = error as! ShellOutError
             print(error.message)
@@ -93,7 +93,7 @@ final class GitTool {
     /// - Parameter branch: 分支名, 不传的话为当前分支
     func push(_ branch: String? = nil) {
         do {
-            try shellOut(to: .gitPush())
+            try shellOut(to: .gitPush(), at: sourceDirectory)
         } catch {
             let error = error as! ShellOutError
             print(error.message)
@@ -107,17 +107,17 @@ final class GitTool {
         
     }
     
-//    @discardableResult
-//    private func shell(_ cmd: String) -> NSAppleEventDescriptor? {
-//        let myAppleScript = "on run\ndo shell script \"\(cmd)\"\n end run"
-//        print(myAppleScript)
-//        var error: NSDictionary?
-//        if let scriptObject = NSAppleScript(source: myAppleScript) {
-//            let result = scriptObject.executeAndReturnError(&error)
-//            print(result)
-//            assert(error == nil)
-//            return result
-//        }
-//        return nil
-//    }
+    @discardableResult
+    private func shell(_ cmd: String) -> NSAppleEventDescriptor? {
+        let myAppleScript = "on run\ndo shell script \"\(cmd)\"\n end run"
+        print(myAppleScript)
+        var error: NSDictionary?
+        if let scriptObject = NSAppleScript(source: myAppleScript) {
+            let result = scriptObject.executeAndReturnError(&error)
+            print(result)
+            assert(error == nil)
+            return result
+        }
+        return nil
+    }
 }
